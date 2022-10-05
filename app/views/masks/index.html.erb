@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Masks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Areaid</th>
+      <th>Amount</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <%=  render "masks/home/admin" , masks: @masks if session[:role]=='admin' %>  
+  <%=  render "masks/home/officer" , mask: @masks if session[:role]=='officer' %>  
+
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mask', new_mask_path %>

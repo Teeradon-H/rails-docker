@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class='header'>
+      Face Masks System
+    </header>
+    <div class='display'>
+      <nav style='flex:10%;text-align:center;'>
+      <li>asds</li>
+      <li>asds</li>
+      <li>asds</li>
+      <a href='/logout'><button>log out</button></a>
+      </nav>  
+      <div style='flex:90%;'>
+        <%= yield %>
+      </div>
+    </div>
+
+  </body>
+</html>

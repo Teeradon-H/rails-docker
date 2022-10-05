@@ -1,0 +1,28 @@
+<div class='m30'>
+  <div class='form-page'>
+        <form action="/login" accept-charset="UTF-8" method="POST"><input name="utf8" type="hidden" value="✓" >
+            <input type="hidden" name="authenticity_token" value="HBvHKEP0G2QjwXz1INsUBDN435GBtKHGgVmgRUJc4KXK9Qh4M6dTKtW5tduuEs3oGtwDFJez3W30v4IXiVyqng==">
+            
+            <h3 class='header-text'>Login</h3>
+            <label><%= @status %></label>
+            <div class="row">
+                <label for="user_userId">userId</label>
+                <input id="user_userId" type="text" name="user[userId]">
+            </div>
+
+            <div class="row">
+                <label for="user_password">Password</label>
+                <input id="user_password" type="password" name="user[password]">
+            </div>
+
+            <div class="actions row">
+                <input type="submit" name="commit" value="Login" data-disable-with="Login">
+            </div>
+        </form>
+    </div>  
+</div>  
+
+   
+<h2><span><a href='/users/register/general'>ลงทะเบียนสำหรับบุคคลทั่วไป</a></span></h2>
+<h2><span><a href='/users/register/officer'>ลงทะเบียนสำหรับเจ้าหน้าที่</a></span></h2>
+  

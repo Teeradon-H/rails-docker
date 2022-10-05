@@ -1,0 +1,4 @@
+<%= params[:role] %>
+<%= render "users/register/general" , user: @user if params[:role]=='general' %>
+<%= render "users/register/officer" , user: @user if params[:role]=='officer' %>
+<%= render "users/register/error" , user: @user unless params[:role]=='officer' || params[:role]=='general'  %>
